@@ -1,0 +1,23 @@
+{
+  "name": "stage-a-antyoku",
+  "version": "1.0.0",
+  "description": "このステージではWebサイト開発の実戦訓練を行います。この\b結果に基づき、Stage-Bの課題と役割が決まります。また、就活の際の実績になるので、ソースコードやコミットメッセージも見られても良い状態に整えましょう。",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Update-hub/stage-a-antyoku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Update-hub/stage-a-antyoku/issues"
+  },
+  "homepage": "https://github.com/Update-hub/stage-a-antyoku#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
