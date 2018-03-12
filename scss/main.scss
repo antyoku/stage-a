@@ -1,12 +1,56 @@
 
 body {
-    background: url("../imgs/town_b.jpg") center/cover no-repeat;
+    background: url("../imgs/town_b_c.jpg") center/cover no-repeat;
     min-height: 100vh;
     font-family: "Century Gothic";
 }
+body, .main, .header {
+    display: block;
+}
+.main {
+    height: 500px;
+    margin: 0;
+    text-align: center;
+    #man {
+        display: none;
+        position: absolute;
+        bottom:-30px; left:0%;
+        height: 100%;
+        margin: 0;
+    }
+    #fall1 {
+        display: none;
+        position: absolute;
+        height: 15%;
+        top: 0px; margin-left: 0%;
+    }
+    #fall2 {
+        display: none;
+        position: absolute;
+        height: 15%;
+        top: 10px; margin-left: -10%;
+    }
+    #fall3 {
+        display: none;
+        position: absolute;
+        height: 15%;
+        top: 0px; margin-left: -30%;
+    }
+    #fall4 {
+        display: none;
+        position: absolute;
+        height: 15%;
+        top: 20px; margin-left: -50%;
+    }
+    #fall5 {
+        display: none;
+        position: absolute;
+        height: 15%;
+        top: 0px; margin-left: -70%;
+    }
+}
 
-
-@media (min-width: 600px) {
+@media (min-width: 840px) {
 
 .header {
     background-color: rgba(123,123,123,0.5);
@@ -14,7 +58,8 @@ body {
 }
 .header__logo {
     font-size: 60px;
-    padding: 10px 50px;
+    padding: 0px 10px;
+    margin: 10px 40px;
     color: #FFFFFF;
     float: left;
 }
@@ -23,16 +68,15 @@ body {
         float: left;
         list-style: none;
         cursor: pointer;
-        padding: 30px 50px;
+        padding: 10px 30px;
+        margin: 20px 20px;
         font-size: 30px;
         color: #C0C0C0;
     }
-}
-
-.main {
-    #man {
-        width: 300px;
+    li:hover {
+        color: #000000;
     }
 }
+
 
 }
