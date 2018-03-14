@@ -1,59 +1,63 @@
 body {
   background: url("../imgs/town_b_c.jpg") center/cover no-repeat;
-  min-height: 100vh;
-  font-family: "Century Gothic"; }
+  min-height: 100vh; }
 
-body, .main, .header {
-  display: block; }
+body,
+.main,
+.header,
+h1 {
+  display: block;
+  font-family: "Century Gothic"; }
 
 @media (min-width: 769px) {
   .main {
     height: 500px;
     margin: 0;
     text-align: center; }
-    .main #man {
-      display: none;
-      position: absolute;
-      bottom: -30px;
-      left: 35%;
-      height: 100%;
-      margin: 0; }
-    .main #fall1 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 0px;
-      margin-left: 10%; }
-    .main #fall2 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 10px;
-      margin-left: -10%; }
-    .main #fall3 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 0px;
-      margin-left: -30%; }
-    .main #fall4 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 20px;
-      margin-left: -50%; }
-    .main #fall5 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 0px;
-      margin-left: -70%; }
+  .main .man {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    left: 35%;
+    height: 100%;
+    margin: 0; }
+  .main .fall1 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 0;
+    margin-left: 10%; }
+  .main .fall2 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 10px;
+    margin-left: -10%; }
+  .main .fall3 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 0;
+    margin-left: -30%; }
+  .main .fall4 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 20px;
+    margin-left: -50%; }
+  .main .fall5 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 0;
+    margin-left: -70%; }
   .header {
     background-color: rgba(123, 123, 123, 0.5);
     height: 100px; }
-  .header__logo {
+  h1 {
+    font-weight: normal;
     font-size: 60px;
-    padding: 0px 10px;
+    padding: 0 10px;
     margin: 10px 40px;
     color: #FFFFFF;
     float: left; }
@@ -73,50 +77,51 @@ body, .main, .header {
     height: 200px;
     margin: 0;
     text-align: center; }
-    .main #man {
-      display: none;
-      position: absolute;
-      bottom: 0px;
-      left: -5%;
-      height: 80%;
-      margin: 0; }
-    .main #fall1 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 0px;
-      margin-left: -10%; }
-    .main #fall2 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 10px;
-      margin-left: -90%; }
-    .main #fall3 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 0px;
-      margin-left: -30%; }
-    .main #fall4 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 20px;
-      margin-left: -50%; }
-    .main #fall5 {
-      display: none;
-      position: absolute;
-      height: 15%;
-      top: 0px;
-      margin-left: -70%; }
+  .main .man {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: -5%;
+    height: 80%;
+    margin: 0; }
+  .main .fall1 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 0;
+    margin-left: -10%; }
+  .main .fall2 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 10px;
+    margin-left: -90%; }
+  .main .fall3 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 0;
+    margin-left: -30%; }
+  .main .fall4 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 20px;
+    margin-left: -50%; }
+  .main .fall5 {
+    display: none;
+    position: absolute;
+    height: 15%;
+    top: 0;
+    margin-left: -70%; }
   .header {
     background-color: rgba(123, 123, 123, 0.5);
     height: 80px; }
-  .header__logo {
+  h1 {
+    font-weight: normal;
     font-size: 40px;
     padding: 10px 10px;
-    margin: 0px 10px;
+    margin: 0 10px;
     color: #FFFFFF;
     float: left; }
   .header__list li {
