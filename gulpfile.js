@@ -1,9 +1,12 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
 
 // Sassコンパイルタスク
 gulp.task('sass', function(){
   gulp.src('scss/**/*.scss')
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
     .pipe(sass())
     .pipe(gulp.dest('css'));
 });
@@ -18,4 +21,3 @@ gulp.task('sass-watch', ['sass'], function(){
 
 // gulpのデフォルト動作としてsass-watchを実行
 gulp.task('default', ['sass-watch']);
-  
