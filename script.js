@@ -14,17 +14,22 @@ $('.js-btn').on('click', function () {
   switch (imgCnt) {
     case 14:
       $('.header__list li').text('ーー');
-      $('h1').text('ー');
+      $('h1').hide();
+      $('.header__eye').show();
       $('#js-man').show();
       $('.js-btn').off('click');
       break;
     case 13:
-      clearTimeout(fall1);clearTimeout(fall2);clearTimeout(fall3);clearTimeout(fall4);clearTimeout(fall5);
+      clearTimeout(fall1);
+      clearTimeout(fall2);
+      clearTimeout(fall3);
+      clearTimeout(fall4);
+      clearTimeout(fall5);
       $('.js-fall').hide();
       $('body').css('background-image', 'url("imgs/town_b_c.jpg")');
       break;
     case 12:
-      fall1=setTimeout(function () {
+      fall1 = setTimeout(function () {
         $('#js-fall1').show().animate({
           'top': '600px'
         }, {
@@ -32,7 +37,7 @@ $('.js-btn').on('click', function () {
           easing: 'swing'
         });
       }, 600);
-      fall2=setTimeout(function () {
+      fall2 = setTimeout(function () {
         $('#js-fall2').show().animate({
           'top': '600px'
         }, {
@@ -40,7 +45,7 @@ $('.js-btn').on('click', function () {
           easing: 'swing'
         });
       }, 200);
-      fall3=setTimeout(function () {
+      fall3 = setTimeout(function () {
         $('#js-fall3').show().animate({
           'top': '600px'
         }, {
@@ -48,7 +53,7 @@ $('.js-btn').on('click', function () {
           easing: 'swing'
         });
       }, 100);
-      fall4=setTimeout(function () {
+      fall4 = setTimeout(function () {
         $('#js-fall4').show().animate({
           'top': '600px'
         }, {
@@ -56,7 +61,7 @@ $('.js-btn').on('click', function () {
           easing: 'swing'
         });
       }, 350);
-      fall5=setTimeout(function () {
+      fall5 = setTimeout(function () {
         $('#js-fall5').show().animate({
           'top': '600px'
         }, {

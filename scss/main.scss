@@ -72,6 +72,14 @@ h1 {
     color: #FFFFFF;
     float: left;
   }
+  .header__eye {
+    display: none;
+    width: 80px;
+    padding: 0 10px;
+    margin: 30px 35px;
+    color: #FFFFFF;
+    float: left;
+  }
   .header__list {
     li {
       float: left;
@@ -146,6 +154,14 @@ h1 {
     font-size: 40px;
     padding: 10px 10px;
     margin: 0 10px;
+    color: #FFFFFF;
+    float: left;
+  }
+  .header__eye {
+    display: none;
+    width: 60px;
+    padding: 0 5px;
+    margin: 23px 10px;
     color: #FFFFFF;
     float: left;
   }
