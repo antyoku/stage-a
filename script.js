@@ -1,6 +1,11 @@
 var imgCnt = 0;
+var fall1 = null;
+var fall2 = null;
+var fall3 = null;
+var fall4 = null;
+var fall5 = null;
 
-$('.header__list li').on('click', function () {
+$('.js-btn').on('click', function () {
   if (imgCnt < 13) {
     document.getElementById('sound').currentTime = 0;
     document.getElementById('sound').play();
@@ -11,13 +16,15 @@ $('.header__list li').on('click', function () {
       $('.header__list li').text('ーー');
       $('h1').text('ー');
       $('#js-man').show();
+      $('.js-btn').off('click');
       break;
     case 13:
+      clearTimeout(fall1);clearTimeout(fall2);clearTimeout(fall3);clearTimeout(fall4);clearTimeout(fall5);
       $('.js-fall').hide();
       $('body').css('background-image', 'url("imgs/town_b_c.jpg")');
       break;
     case 12:
-      setTimeout(function () {
+      fall1=setTimeout(function () {
         $('#js-fall1').show().animate({
           'top': '600px'
         }, {
@@ -25,7 +32,7 @@ $('.header__list li').on('click', function () {
           easing: 'swing'
         });
       }, 600);
-      setTimeout(function () {
+      fall2=setTimeout(function () {
         $('#js-fall2').show().animate({
           'top': '600px'
         }, {
@@ -33,7 +40,7 @@ $('.header__list li').on('click', function () {
           easing: 'swing'
         });
       }, 200);
-      setTimeout(function () {
+      fall3=setTimeout(function () {
         $('#js-fall3').show().animate({
           'top': '600px'
         }, {
@@ -41,7 +48,7 @@ $('.header__list li').on('click', function () {
           easing: 'swing'
         });
       }, 100);
-      setTimeout(function () {
+      fall4=setTimeout(function () {
         $('#js-fall4').show().animate({
           'top': '600px'
         }, {
@@ -49,7 +56,7 @@ $('.header__list li').on('click', function () {
           easing: 'swing'
         });
       }, 350);
-      setTimeout(function () {
+      fall5=setTimeout(function () {
         $('#js-fall5').show().animate({
           'top': '600px'
         }, {
