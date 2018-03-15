@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
@@ -19,5 +21,5 @@ gulp.task('sass-watch', ['sass'], function(){
   });
 });
 
-// gulpのデフォルト動作としてsass-watchを実行
+// gulpのデフォルト動作
 gulp.task('default', ['sass-watch']);
