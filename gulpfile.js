@@ -6,7 +6,7 @@ var plumber = require('gulp-plumber');
 
 // Sassコンパイルタスク
 gulp.task('sass', function(){
-  gulp.src('scss/**/*.scss')
+  gulp.src('src/**/*.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(sass())
@@ -15,7 +15,7 @@ gulp.task('sass', function(){
 
 // watchタスク(**/*.scss変更時に実行するタスク)
 gulp.task('sass-watch', ['sass'], function(){
-  var watcher = gulp.watch('scss/**/*.scss', ['sass']);
+  var watcher = gulp.watch('src/**/*.scss', ['sass']);
   watcher.on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });
